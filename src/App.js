@@ -8,6 +8,9 @@ import {
 import Home from "./components/Pages/Home/Home";
 import Header from "./components/Layout/Header/Header";
 import Footer from "./components/Layout/Footer/Footer";
+import ProductDetails from "./components/Pages/ProductDetails/ProductDetails";
+import Login from "./components/Pages/Login/Login";
+import Register from "./components/Pages/Register/Register";
 
 function App() {
   return (
@@ -20,6 +23,15 @@ function App() {
           </Route>
           <Route path="/home">
             <Home />
+          </Route>
+          <Route path="/productDetails/:productId">
+            <ProductDetails></ProductDetails>
+          </Route>
+          <Route path="/login">
+            <Login />
+          </Route>
+          <Route path="/register">
+            <Register />
           </Route>
         </Switch>
         <Footer></Footer>
