@@ -11,6 +11,7 @@ import Footer from "./components/Layout/Footer/Footer";
 import ProductDetails from "./components/Pages/ProductDetails/ProductDetails";
 import Login from "./components/Pages/Login/Login";
 import Register from "./components/Pages/Register/Register";
+import OrderPage from "./components/Pages/OrderPage/OrderPage";
 
 function App() {
   return (
@@ -26,6 +27,9 @@ function App() {
           </Route>
           <Route path="/productDetails/:productId">
             <ProductDetails></ProductDetails>
+          </Route>
+          <Route path="/orderPage">
+            <OrderPage></OrderPage>
           </Route>
           <Route path="/login">
             <Login />

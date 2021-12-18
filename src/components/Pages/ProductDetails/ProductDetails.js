@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 const ProductDetails = () => {
   const { productId } = useParams();
@@ -13,15 +13,18 @@ const ProductDetails = () => {
   }, []);
   return (
     <>
-      <div className="container pt-5">
+      <div className="container mt-5 py-5">
         <div className="row">
           <div className="col-md-6">
             <img src={img} alt={title} />
           </div>
-          <div className="col-md-6">
-            <h2>{title}</h2>
-            <p>{price}</p>
-            <p>{desc}</p>
+          <div className="col-md-6 text-start pe-5">
+            <h2 className="fs-1 py-3">{title}</h2>
+            <p className="fs-3 text-info">Price- {price} BDT</p>
+            <p className="fs-4">{desc}</p>
+            <Link to="/orderPage">
+              <button className="btn btn-success">Buy Now</button>
+            </Link>
           </div>
         </div>
       </div>

@@ -1,5 +1,6 @@
 import React from "react";
 import { useForm } from "react-hook-form";
+import { Link } from "react-router-dom";
 import "./Register.css";
 
 const Register = () => {
@@ -106,9 +107,9 @@ const Register = () => {
             />
             <div className="text-start">
               Already have an account?
-              <a href="/login" className="text-danger">
+              <Link to="/login" className="text-danger">
                 Login
-              </a>
+              </Link>
             </div>
           </form>
         </div>

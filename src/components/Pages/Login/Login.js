@@ -1,5 +1,6 @@
 import React from "react";
 import { useForm } from "react-hook-form";
+import { Link } from "react-router-dom";
 import "./Login.css";
 
 const Login = () => {
@@ -76,13 +77,13 @@ const Login = () => {
             <div className="text-start d-flex justify-content-between">
               <div className="text-start">
                 Don't have an account?
-                <a href="/register" className="text-danger">
+                <Link to="/register" className="text-danger">
                   Register
-                </a>
+                </Link>
               </div>
-              <a href="#" className="text-danger">
+              <Link to="/" className="text-danger">
                 Forgot Password?
-              </a>
+              </Link>
             </div>
           </form>
         </div>
